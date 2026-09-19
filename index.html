@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CyberTrack | Home</title>
+
+    <!-- Website Icon -->
+    <link rel="icon" type="image/png"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZojMppZL2c-WXirNUr7LxJTtmG-1NkgE8a1Yq7K1H-uv94GfX6gUNfU4&s=10">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-slate-950/95 border-b border-cyan-500/20 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <a href="index.html" class="flex items-center gap-3">
+
+            <div class="w-10 h-10 bg-cyan-500 rounded-xl flex items-center justify-center overflow-hidden">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZojMppZL2c-WXirNUr7LxJTtmG-1NkgE8a1Yq7K1H-uv94GfX6gUNfU4&s=10"
+                    alt="CyberTrack Logo"
+                    class="w-full h-full object-cover">
+            </div>
+
+            <div>
+                <h1 class="font-bold text-xl">
+                    Cyber<span class="text-cyan-400">Track</span>
+                </h1>
+
+                <p class="text-xs text-slate-400">
+                    Cyber Report System
+                </p>
+            </div>
+
+        </a>
+
+        <div class="hidden md:flex gap-8">
+            <a href="index.html" class="text-cyan-400">Home</a>
+            <a href="about.html" class="hover:text-cyan-400">About</a>
+            <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+        </div>
+
+        <div class="hidden md:flex gap-3">
+
+            <a href="signin.html"
+                class="border border-cyan-500/40 text-cyan-400 px-5 py-2 rounded-lg">
+                Sign In
+            </a>
+
+            <a href="signup.html"
+                class="bg-cyan-500 text-slate-950 font-bold px-5 py-2 rounded-lg">
+                Sign Up
+            </a>
+
+        </div>
+
+    </div>
+</nav>
+
+
+```html
+<!-- HERO -->
+<section
+    class="relative w-full px-6 py-24 overflow-hidden
+           bg-[url('https://2456764.fs1.hubspotusercontent-eu1.net/hubfs/2456764/cyberattack_1200x627.jpg')]
+           bg-cover bg-center">
+
+    <!-- Background Overlay -->
+    <div class="absolute inset-0 bg-slate-950/75"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-7xl mx-auto">
+
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+            <!-- LEFT SIDE -->
+            <div>
+
+                <span
+                    class="inline-block bg-cyan-500/10 text-cyan-400
+                           border border-cyan-500/20 px-4 py-2 rounded-full text-sm">
+                    🔐 Cyber Security Reporting Platform
+                </span>
+
+                <h2 class="text-5xl lg:text-6xl font-extrabold mt-6 leading-tight">
+                    Report.
+                    <span class="text-cyan-400">Track.</span>
+                    <br>
+                    Stay Secure.
+                </h2>
+
+                <p class="text-slate-300 text-lg mt-6 leading-relaxed">
+                    CyberTrack helps users report cyber incidents and
+                    securely track the progress of their reports.
+                </p>
+
+                <div class="flex gap-4 mt-8 flex-wrap">
+
+                    <a href="contact.html"
+                       class="bg-cyan-500 text-slate-950 font-bold
+                              px-7 py-4 rounded-xl hover:bg-cyan-400 transition">
+                        Report an Incident →
+                    </a>
+
+                    <a href="#tracking"
+                       class="border border-slate-600 px-7 py-4 rounded-xl
+                              hover:border-cyan-400 transition">
+                        Track Report
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE / HERO CARD -->
+            <div class="bg-slate-900/80 backdrop-blur-sm
+                        border border-cyan-500/20 rounded-3xl p-8">
+
+                <div class="flex justify-between items-center">
+
+                    <div>
+                        <p class="text-slate-400">
+                            Security Status
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-2">
+                            System Protected
+                        </h3>
+                    </div>
+
+                    <div class="text-4xl">
+                        🔒
+                    </div>
+
+                </div>
+
+
+                <div class="space-y-4 mt-8">
+
+                    <!-- Active Reports -->
+                    <div class="bg-slate-800/90 p-5 rounded-xl">
+
+                        <div class="flex justify-between">
+
+                            <span>
+                                Active Reports
+                            </span>
+
+                            <span class="text-cyan-400 font-bold">
+                                128
+                            </span>
+
+                        </div>
+
+                        <div class="bg-slate-700 h-2 rounded-full mt-3">
+
+                            <div class="bg-cyan-400 h-2 rounded-full w-3/4">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Reports Resolved -->
+                    <div class="bg-slate-800/90 p-5 rounded-xl flex justify-between">
+
+                        <span>
+                            Reports Resolved
+                        </span>
+
+                        <span class="text-green-400 font-bold">
+                            94%
+                        </span>
+
+                    </div>
+
+
+                    <!-- System Status -->
+                    <div class="bg-slate-800/90 p-5 rounded-xl flex justify-between">
+
+                        <span>
+                            System Status
+                        </span>
+
+                        <span class="text-green-400">
+                            ● Operational
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+```
+
+
+
+<!-- STATISTICS -->
+<section class="border-y border-slate-800 bg-slate-900/50">
+
+    <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="text-center">
+            <h3 class="text-4xl font-bold text-cyan-400">
+                2500+
+            </h3>
+            <p class="text-slate-400 mt-2">
+                Reports Submitted
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-4xl font-bold text-green-400">
+                1980+
+            </h3>
+            <p class="text-slate-400 mt-2">
+                Cases Resolved
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-4xl font-bold text-blue-400">
+                98%
+            </h3>
+            <p class="text-slate-400 mt-2">
+                System Availability
+            </p>
+        </div>
+
+        <div class="text-center">
+            <h3 class="text-4xl font-bold text-purple-400">
+                24/7
+            </h3>
+            <p class="text-slate-400 mt-2">
+                Monitoring
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TRACKING -->
+<section id="tracking" class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+
+            <span class="text-cyan-400 font-semibold">
+                REPORT TRACKING
+            </span>
+
+            <h2 class="text-4xl font-bold mt-3">
+                Track Your Cyber Report
+            </h2>
+
+            <p class="text-slate-400 mt-5">
+                Enter your unique report ID to check your report status.
+            </p>
+
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+
+            <label class="block mb-2">
+                Report ID
+            </label>
+
+            <div class="flex gap-3">
+
+                <input
+                    type="text"
+                    placeholder="CR-2026-00125"
+                    class="flex-1 bg-slate-800 border border-slate-700 rounded-xl px-4 py-3">
+
+                <button
+                    class="bg-cyan-500 text-slate-950 font-bold px-6 rounded-xl">
+                    Track
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- THREAT CATEGORIES -->
+<section class="bg-slate-900/60 py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+
+            <span class="text-cyan-400">
+                CYBER THREATS
+            </span>
+
+            <h2 class="text-4xl font-bold mt-3">
+                What Can You Report?
+            </h2>
+
+        </div>
+
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-4xl">🎣</div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Phishing
+                </h3>
+
+                <p class="text-slate-400 mt-3">
+                    Report suspicious emails and links.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-4xl">💻</div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Hacking
+                </h3>
+
+                <p class="text-slate-400 mt-3">
+                    Report unauthorized access.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-4xl">💳</div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Online Fraud
+                </h3>
+
+                <p class="text-slate-400 mt-3">
+                    Report online scams and fraud.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+                <div class="text-4xl">🔐</div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Data Breach
+                </h3>
+
+                <p class="text-slate-400 mt-3">
+                    Report exposed personal data.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="text-center mb-14">
+
+        <span class="text-cyan-400">
+            SIMPLE PROCESS
+        </span>
+
+        <h2 class="text-4xl font-bold mt-3">
+            How CyberTrack Works
+        </h2>
+
+    </div>
+
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="text-center">
+
+            <div
+                class="mx-auto w-16 h-16 bg-cyan-500/10 border border-cyan-500/30 rounded-2xl flex items-center justify-center text-cyan-400 font-bold">
+                01
+            </div>
+
+            <h3 class="text-xl font-bold mt-5">
+                Submit Report
+            </h3>
+
+            <p class="text-slate-400 mt-3">
+                Submit information about the incident.
+            </p>
+
+        </div>
+
+
+        <div class="text-center">
+
+            <div
+                class="mx-auto w-16 h-16 bg-cyan-500/10 border border-cyan-500/30 rounded-2xl flex items-center justify-center text-cyan-400 font-bold">
+                02
+            </div>
+
+            <h3 class="text-xl font-bold mt-5">
+                Investigation
+            </h3>
+
+            <p class="text-slate-400 mt-3">
+                The report is reviewed and investigated.
+            </p>
+
+        </div>
+
+
+        <div class="text-center">
+
+            <div
+                class="mx-auto w-16 h-16 bg-cyan-500/10 border border-cyan-500/30 rounded-2xl flex items-center justify-center text-cyan-400 font-bold">
+                03
+            </div>
+
+            <h3 class="text-xl font-bold mt-5">
+                Track Progress
+            </h3>
+
+            <p class="text-slate-400 mt-3">
+                Track your report using its unique ID.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="bg-slate-900/60 py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+
+            <span class="text-cyan-400">
+                WHY CYBERTRACK
+            </span>
+
+            <h2 class="text-4xl font-bold mt-3">
+                Built for Secure Reporting
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-4 gap-6">
+
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                <div class="text-3xl">🔒</div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Secure
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Security-focused reporting.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                <div class="text-3xl">⚡</div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Fast
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Quick incident submission.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                <div class="text-3xl">📊</div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Transparent
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Easy report tracking.
+                </p>
+            </div>
+
+
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                <div class="text-3xl">🌐</div>
+
+                <h3 class="font-bold text-xl mt-4">
+                    Accessible
+                </h3>
+
+                <p class="text-slate-400 mt-2">
+                    Available across devices.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+
+    <div
+        class="text-center bg-gradient-to-r from-cyan-600/20 to-blue-600/20 border border-cyan-500/20 rounded-3xl p-12">
+
+        <h2 class="text-4xl font-bold">
+            Experienced a Cyber Incident?
+        </h2>
+
+        <p class="text-slate-400 mt-4">
+            Report it and help create a safer digital environment.
+        </p>
+
+        <a href="contact.html"
+            class="inline-block mt-7 bg-cyan-500 text-slate-950 font-bold px-8 py-4 rounded-xl">
+            Report an Incident
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="border-t border-slate-800 bg-slate-950">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid md:grid-cols-4 gap-10">
+
+            <div>
+
+                <h2 class="text-2xl font-bold">
+                    Cyber<span class="text-cyan-400">Track</span>
+                </h2>
+
+                <p class="text-slate-400 mt-4">
+                    Modern cyber incident reporting and tracking system.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold mb-4">
+                    Platform
+                </h3>
+
+                <a href="index.html"
+                    class="block text-slate-400 hover:text-cyan-400">
+                    Home
+                </a>
+
+                <a href="about.html"
+                    class="block text-slate-400 hover:text-cyan-400 mt-2">
+                    About
+                </a>
+
+                <a href="contact.html"
+                    class="block text-slate-400 hover:text-cyan-400 mt-2">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold mb-4">
+                    Account
+                </h3>
+
+                <a href="signup.html"
+                    class="block text-slate-400 hover:text-cyan-400">
+                    Sign Up
+                </a>
+
+                <a href="signin.html"
+                    class="block text-slate-400 hover:text-cyan-400 mt-2">
+                    Sign In
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="font-bold mb-4">
+                    Security
+                </h3>
+
+                <p class="text-slate-400">
+                    Report and track cybersecurity incidents securely.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="border-t border-slate-800 mt-10 pt-6 text-center text-slate-500">
+
+            © 2026 CyberTrack. All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
